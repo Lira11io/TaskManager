@@ -1,0 +1,27 @@
+.root {
+  margin: 10px;
+}
+
+/*Поле ввода задач*/
+.manager__task_input {
+  min-height: 29px;
+  text-align: center;
+}
+
+/*Кнопка "Добавить задачу"*/
+.manager__task_button {
+  margin: 10px;
+  padding: 7px;
+}
+
+/*Поле списка задач*/
+.manager__list_input {
+  text-align: center;
+  min-height: 29px;
+}
+
+/*Кнопка "Очистить список задач"*/
+.manager__list_button {
+  margin: 10px;
+  padding: 7px;
+}

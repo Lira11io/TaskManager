@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Планировщик задач</title>
+  </head>
+  <body>
+    <div class="root">
+      <section class="manager">
+        <h1 class="manager__title">ПЛАНИРОВЩИК ЗАДАЧ</h1>
+        <section class="manager__task">
+          <h2 class="manager__task_title">Добавить задачу</h2>
+          <label for="manager__task_input">
+            <input
+              class="manager__task_input"
+              name="text"
+              id="manager__task_input"
+              placeholder="Задача"
+            />
+          </label>
+          <button class="manager__task_button">Добавить</button>
+        </section>
+        <section class="manager__list">
+          <h2 class="manager__list_title">Список задач</h2>
+          <div class="manager__list_item">
+            <label for="manager__list_input">
+              <input
+                class="manager__list_input"
+                type="text"
+                id="manager__list_input"
+                placeholder="Нет задач"
+                disabled
+              />
+            </label>
+          </div>
+          <button class="manager__list_button">Очистить список задач</button>
+        </section>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
