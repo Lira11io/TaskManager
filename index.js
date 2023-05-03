@@ -5,9 +5,6 @@ const listInput = document.querySelector(".manager__list_input"); //поле с�
 const listButton = document.querySelector(".manager__list_button"); //кнопка "Очистить список задач"
 const listItem = document.querySelector(".manager__list_item"); //блок списка задач
 
-//создаем переменные
-//const taskInputV = taskInput.value; //переменная для значения поля ввода задач
-
 //добавляем обработчик события на кнопку "Добавить"
 taskButton.addEventListener("click", () => {
   const oldInput = document.querySelector(".manager__list_input"); // получаем элемент с классом "manager__list_input"
@@ -20,12 +17,15 @@ taskButton.addEventListener("click", () => {
     <p class="manager__list_item_text">
     ${taskInput.value}
     </p>  
-  </div>  
-  <label for="checkbox"> 
+    <label for="checkbox"> 
     <input class="manager__list_item_checkbox" type="checkbox" name="ready" id="checkbox">
-    </label>`;
+    </label>
+    </div> `;
+
   //очищаем поле ввода задачи
   taskInput.value = "";
+  //изменяю стиль кнопки "Очистить список задач"
+  listButton.style.backgroundColor = "rgb(158, 106, 207)";
 });
 
 //добавляем обработчик события на кнопку "Очистить список задач"
@@ -40,4 +40,7 @@ listButton.addEventListener("click", () => {
     disabled
   />
 </label>`;
+
+  //изменяю стиль кнопки "Очистить список задач"
+  listButton.style.backgroundColor = "rgb(216, 216, 216)";
 });
